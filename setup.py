@@ -7,14 +7,16 @@ runtime_library_dirs = []
 extra_objects = []
 define_macros = []
 
-setup(name = "jpegoptim",
+setup(name = "pyjpegoptim",
       version = "0.1.1",
       author = "Guangming Li",
       author_email = "leeful@gmail.com",
       license = "GPL",
-      url = "http://liguangming.com/jpegoptim",
-      packages = ["jpegoptim"],
-      ext_package = "jpegoptim",
+      description = 'a utility for optimizing JPEG files',
+      url = "https://github.com/cute/pyjpegoptim",
+      keywords = ['JpegOptim', 'TinyJpeg'],
+      packages = ["pyjpegoptim"],
+      ext_package = "pyjpegoptim",
       ext_modules = [Extension( name = "jpegoptim",
                                 sources = ["src/jpegoptim.c"],
                                 include_dirs = include_dirs,
